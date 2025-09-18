@@ -3373,7 +3373,7 @@ const BasicShader = async (renderer, options=[]) => {
                     float refP1, refP2;
                     if(refOmitEquirectangular != 1.0){
                       vec3 reflectionPos = R_rpy(nV, vec3(0.0,
-                                                      -camOri.y, -camOri.z));
+                                                      camOri.y, -camOri.z));
                       float px = reflectionPos.x;
                       float py = reflectionPos.y;
                       float pz = reflectionPos.z;
@@ -3385,7 +3385,7 @@ const BasicShader = async (renderer, options=[]) => {
                       refP2 = vUv.y;
                     }
                     
-                    vec2 refCoords = vec2(1.0 - refP1 * 2.0 + refTheta, 1.0-refP2);
+                    vec2 refCoords = vec2(1.0 - refP1 * 2.0 + refTheta, refP2);
                     vec4 refCol = vec4(texture2D(reflectionMap, refCoords).rgb * 1.25, reflection / 1.0);
                     mixColor = merge(mixColor, refCol);
                     baseColorIp = 1.0 - reflection; //min(1.0, 2.0 - reflection);

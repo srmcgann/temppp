@@ -2735,8 +2735,8 @@ const BindImage = (gl, resource, binding, textureMode='image', tval=-1, geometry
   }
   //gl.generateMipmap(gl.TEXTURE_2D)
   
-    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.MIRRORED_REPEAT);
-    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.MIRRORED_REPEAT);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.REPEAT);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.REPEAT);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
     if(geometry.flatShading) gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
   
@@ -3373,7 +3373,7 @@ const BasicShader = async (renderer, options=[]) => {
                     float refP1, refP2;
                     if(refOmitEquirectangular != 1.0){
                       vec3 reflectionPos = R_rpy(nV, vec3(0.0,
-                                                      camOri.y, -camOri.z));
+                                                      -camOri.y, -camOri.z));
                       float px = reflectionPos.x;
                       float py = reflectionPos.y;
                       float pz = reflectionPos.z;
@@ -4955,8 +4955,8 @@ const ShapeFromArray = async (shape, pointArray, options={}) => {
     var tz = par[2]
     for(var j = 0; j < v.length; j+=3){
       geometryData.vertices.push(tx+v[j+0], ty+v[j+1], tz+v[j+2])
-      if(n)  geometryData.normals.push(tx+n[j*2+0], ty+n[j*2+1], tz+n[j*2+2])
-      if(n)  geometryData.normals.push(tx+n[j*2+3], ty+n[j*2+4], tz+n[j*2+5])
+      //if(n)  geometryData.normals.push(tx+n[j*2+0], ty+n[j*2+1], tz+n[j*2+2])
+      //if(n)  geometryData.normals.push(tx+n[j*2+3], ty+n[j*2+4], tz+n[j*2+5])
       if(uv) geometryData.uvs.push(uv[j/3*2+0], tx+uv[j/3*2+1])
       if(nv) geometryData.normalVecs.push(nv[j+0], nv[j+1], nv[j+2])
     }

@@ -1,434 +1,64 @@
-2a3,202
->       "name":"READ_BUFFER",
->       "val":1029
->    },
->    {
->       "name":"UNPACK_ROW_LENGTH",
+144c144
+<       "val":1029
+---
 >       "val":0
->    },
->    {
->       "name":"UNPACK_SKIP_ROWS",
+148c148
+<       "val":1029
+---
 >       "val":0
->    },
->    {
->       "name":"UNPACK_SKIP_PIXELS",
+152c152
+<       "val":1029
+---
 >       "val":0
->    },
->    {
->       "name":"PACK_ROW_LENGTH",
+156c156
+<       "val":1029
+---
 >       "val":0
->    },
->    {
->       "name":"PACK_SKIP_ROWS",
+160c160
+<       "val":1029
+---
 >       "val":0
->    },
->    {
->       "name":"PACK_SKIP_PIXELS",
+164c164
+<       "val":1029
+---
 >       "val":0
->    },
->    {
->       "name":"UNPACK_SKIP_IMAGES",
+168c168
+<       "val":1029
+---
 >       "val":0
->    },
->    {
->       "name":"UNPACK_IMAGE_HEIGHT",
->       "val":0
->    },
->    {
->       "name":"MAX_3D_TEXTURE_SIZE",
->       "val":2048
->    },
->    {
->       "name":"MAX_ELEMENTS_VERTICES",
->       "val":2147483647
->    },
->    {
->       "name":"MAX_ELEMENTS_INDICES",
->       "val":2147483647
->    },
->    {
->       "name":"MAX_TEXTURE_LOD_BIAS",
->       "val":2
->    },
->    {
->       "name":"MAX_DRAW_BUFFERS",
->       "val":8
->    },
->    {
->       "name":"DRAW_BUFFER0",
->       "val":1029
->    },
->    {
->       "name":"DRAW_BUFFER1",
->       "val":0
->    },
->    {
->       "name":"DRAW_BUFFER2",
->       "val":0
->    },
->    {
->       "name":"DRAW_BUFFER3",
->       "val":0
->    },
->    {
->       "name":"DRAW_BUFFER4",
->       "val":0
->    },
->    {
->       "name":"DRAW_BUFFER5",
->       "val":0
->    },
->    {
->       "name":"DRAW_BUFFER6",
->       "val":0
->    },
->    {
->       "name":"DRAW_BUFFER7",
->       "val":0
->    },
->    {
->       "name":"MAX_FRAGMENT_UNIFORM_COMPONENTS",
->       "val":4096
->    },
->    {
->       "name":"MAX_VERTEX_UNIFORM_COMPONENTS",
->       "val":16384
->    },
->    {
->       "name":"FRAGMENT_SHADER_DERIVATIVE_HINT",
->       "val":4352
->    },
->    {
->       "name":"MAX_ARRAY_TEXTURE_LAYERS",
->       "val":2048
->    },
->    {
->       "name":"MIN_PROGRAM_TEXEL_OFFSET",
->       "val":-8
->    },
->    {
->       "name":"MAX_PROGRAM_TEXEL_OFFSET",
->       "val":7
->    },
->    {
->       "name":"MAX_VARYING_COMPONENTS",
->       "val":120
->    },
->    {
->       "name":"MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS",
->       "val":4
->    },
->    {
->       "name":"RASTERIZER_DISCARD",
->       "val":false
->    },
->    {
->       "name":"MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS",
->       "val":120
->    },
->    {
->       "name":"MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS",
->       "val":4
->    },
->    {
->       "name":"MAX_COLOR_ATTACHMENTS",
->       "val":8
->    },
->    {
->       "name":"MAX_SAMPLES",
->       "val":16
->    },
->    {
->       "name":"MAX_VERTEX_UNIFORM_BLOCKS",
->       "val":12
->    },
->    {
->       "name":"MAX_FRAGMENT_UNIFORM_BLOCKS",
->       "val":12
->    },
->    {
->       "name":"MAX_COMBINED_UNIFORM_BLOCKS",
->       "val":24
->    },
->    {
->       "name":"MAX_UNIFORM_BUFFER_BINDINGS",
->       "val":24
->    },
->    {
->       "name":"MAX_UNIFORM_BLOCK_SIZE",
->       "val":65536
->    },
->    {
->       "name":"MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS",
->       "val":212992
->    },
->    {
->       "name":"MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS",
->       "val":200704
->    },
->    {
->       "name":"UNIFORM_BUFFER_OFFSET_ALIGNMENT",
->       "val":256
->    },
->    {
->       "name":"MAX_VERTEX_OUTPUT_COMPONENTS",
->       "val":120
->    },
->    {
->       "name":"MAX_FRAGMENT_INPUT_COMPONENTS",
->       "val":120
->    },
->    {
->       "name":"MAX_SERVER_WAIT_TIMEOUT",
->       "val":0
->    },
->    {
->       "name":"TRANSFORM_FEEDBACK_PAUSED",
->       "val":false
->    },
->    {
->       "name":"TRANSFORM_FEEDBACK_ACTIVE",
->       "val":false
->    },
->    {
->       "name":"MAX_ELEMENT_INDEX",
->       "val":4294967294
->    },
->    {
->       "name":"MAX_CLIENT_WAIT_TIMEOUT_WEBGL",
+208c208
+<       "val":0
+---
 >       "val":1000000000
->    },
->    {
-146c346
-<       "val":4294967295
----
->       "val":2147483647
-150c350
-<       "val":4294967295
----
->       "val":2147483647
-174c374
-<       "val":4294967295
----
->       "val":2147483647
-178c378
-<       "val":4294967295
----
->       "val":2147483647
-333c533
-<       "val":"WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)"
----
->       "val":"WebGL GLSL ES 3.00"
-343c543
-<       "val":"WebKit"
----
->       "val":"Mozilla"
-347c547
+399c399
 <       "val":"WebKit WebGL"
 ---
 >       "val":"ANGLE (Intel, Intel(R) HD Graphics 400 Direct3D11 vs_5_0 ps_5_0), or similar"
-351c551
+440c440
+<       "val":"WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)"
+---
+>       "val":"WebGL GLSL ES 3.00"
+464c464
+<       "val":4294967295
+---
+>       "val":2147483647
+468c468
+<       "val":4294967295
+---
+>       "val":2147483647
+504c504
+<       "val":4294967295
+---
+>       "val":2147483647
+508c508
+<       "val":4294967295
+---
+>       "val":2147483647
+570c570
+<       "val":"WebKit"
+---
+>       "val":"Mozilla"
+574c574
 <       "val":"WebGL 2.0 (OpenGL ES 3.0 Chromium)"
 ---
 >       "val":"WebGL 2.0"
-384,583d583
-<    },
-<    {
-<       "name":"READ_BUFFER",
-<       "val":1029
-<    },
-<    {
-<       "name":"UNPACK_ROW_LENGTH",
-<       "val":0
-<    },
-<    {
-<       "name":"UNPACK_SKIP_ROWS",
-<       "val":0
-<    },
-<    {
-<       "name":"UNPACK_SKIP_PIXELS",
-<       "val":0
-<    },
-<    {
-<       "name":"PACK_ROW_LENGTH",
-<       "val":0
-<    },
-<    {
-<       "name":"PACK_SKIP_ROWS",
-<       "val":0
-<    },
-<    {
-<       "name":"PACK_SKIP_PIXELS",
-<       "val":0
-<    },
-<    {
-<       "name":"UNPACK_SKIP_IMAGES",
-<       "val":0
-<    },
-<    {
-<       "name":"UNPACK_IMAGE_HEIGHT",
-<       "val":0
-<    },
-<    {
-<       "name":"MAX_3D_TEXTURE_SIZE",
-<       "val":2048
-<    },
-<    {
-<       "name":"MAX_ELEMENTS_VERTICES",
-<       "val":2147483647
-<    },
-<    {
-<       "name":"MAX_ELEMENTS_INDICES",
-<       "val":2147483647
-<    },
-<    {
-<       "name":"MAX_TEXTURE_LOD_BIAS",
-<       "val":2
-<    },
-<    {
-<       "name":"MAX_DRAW_BUFFERS",
-<       "val":8
-<    },
-<    {
-<       "name":"DRAW_BUFFER0",
-<       "val":1029
-<    },
-<    {
-<       "name":"DRAW_BUFFER1",
-<       "val":1029
-<    },
-<    {
-<       "name":"DRAW_BUFFER2",
-<       "val":1029
-<    },
-<    {
-<       "name":"DRAW_BUFFER3",
-<       "val":1029
-<    },
-<    {
-<       "name":"DRAW_BUFFER4",
-<       "val":1029
-<    },
-<    {
-<       "name":"DRAW_BUFFER5",
-<       "val":1029
-<    },
-<    {
-<       "name":"DRAW_BUFFER6",
-<       "val":1029
-<    },
-<    {
-<       "name":"DRAW_BUFFER7",
-<       "val":1029
-<    },
-<    {
-<       "name":"MAX_FRAGMENT_UNIFORM_COMPONENTS",
-<       "val":4096
-<    },
-<    {
-<       "name":"MAX_VERTEX_UNIFORM_COMPONENTS",
-<       "val":16384
-<    },
-<    {
-<       "name":"FRAGMENT_SHADER_DERIVATIVE_HINT",
-<       "val":4352
-<    },
-<    {
-<       "name":"MAX_ARRAY_TEXTURE_LAYERS",
-<       "val":2048
-<    },
-<    {
-<       "name":"MIN_PROGRAM_TEXEL_OFFSET",
-<       "val":-8
-<    },
-<    {
-<       "name":"MAX_PROGRAM_TEXEL_OFFSET",
-<       "val":7
-<    },
-<    {
-<       "name":"MAX_VARYING_COMPONENTS",
-<       "val":120
-<    },
-<    {
-<       "name":"MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS",
-<       "val":4
-<    },
-<    {
-<       "name":"RASTERIZER_DISCARD",
-<       "val":false
-<    },
-<    {
-<       "name":"MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS",
-<       "val":120
-<    },
-<    {
-<       "name":"MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS",
-<       "val":4
-<    },
-<    {
-<       "name":"MAX_COLOR_ATTACHMENTS",
-<       "val":8
-<    },
-<    {
-<       "name":"MAX_SAMPLES",
-<       "val":16
-<    },
-<    {
-<       "name":"MAX_VERTEX_UNIFORM_BLOCKS",
-<       "val":12
-<    },
-<    {
-<       "name":"MAX_FRAGMENT_UNIFORM_BLOCKS",
-<       "val":12
-<    },
-<    {
-<       "name":"MAX_COMBINED_UNIFORM_BLOCKS",
-<       "val":24
-<    },
-<    {
-<       "name":"MAX_UNIFORM_BUFFER_BINDINGS",
-<       "val":24
-<    },
-<    {
-<       "name":"MAX_UNIFORM_BLOCK_SIZE",
-<       "val":65536
-<    },
-<    {
-<       "name":"MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS",
-<       "val":212992
-<    },
-<    {
-<       "name":"MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS",
-<       "val":200704
-<    },
-<    {
-<       "name":"UNIFORM_BUFFER_OFFSET_ALIGNMENT",
-<       "val":256
-<    },
-<    {
-<       "name":"MAX_VERTEX_OUTPUT_COMPONENTS",
-<       "val":120
-<    },
-<    {
-<       "name":"MAX_FRAGMENT_INPUT_COMPONENTS",
-<       "val":120
-<    },
-<    {
-<       "name":"MAX_SERVER_WAIT_TIMEOUT",
-<       "val":0
-<    },
-<    {
-<       "name":"TRANSFORM_FEEDBACK_PAUSED",
-<       "val":false
-<    },
-<    {
-<       "name":"TRANSFORM_FEEDBACK_ACTIVE",
-<       "val":false
-<    },
-<    {
-<       "name":"MAX_ELEMENT_INDEX",
-<       "val":4294967294
-<    },
-<    {
-<       "name":"MAX_CLIENT_WAIT_TIMEOUT_WEBGL",
-<       "val":0

@@ -649,7 +649,7 @@ const Renderer = async options => {
                       var ar = uniform.value
                       if(IsArray(ar)){
                         uniform.locCustomUniform =
-                           ctx.getUniformLocation(dset.program, uniform.uniformName + '[0]')
+                           ctx.getUniformLocation(dset.program, uniform.uniformName)
                            console.log('1', uniform)
                         ctx[uniform.dataType](uniform.locCustomUniform, uniform.value)
                       }else{

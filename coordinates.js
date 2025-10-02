@@ -52,8 +52,9 @@ const Renderer = async options => {
       alpha                   : true,
       antialias               : false,
       desynchronized          : true,
-      premultipliedAlpha      : false
-     }
+      premultipliedAlpha      : false,
+      preserveDrawingBuffer:  : true,
+    }
   }
   
   var alphaQueue      = []

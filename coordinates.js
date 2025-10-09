@@ -6821,7 +6821,6 @@ const LoadFPSControls = async (renderer, options) => {
     
     window.addEventListener('keydown', e => {
       if(1||document.activeElement.nodeName == 'CANVAS'){
-        console.log(e.keyCode)
         renderer.keys[e.keyCode] = true
         renderer.lastInteraction = renderer.t
       }
@@ -6858,7 +6857,7 @@ const LoadFPSControls = async (renderer, options) => {
     })
     
     renderer.doKeys = async () => {
-
+      console.log(renderer.x)
       mv = .1 * renderer.mspeed
       rv = .005 * renderer.rspeed
 

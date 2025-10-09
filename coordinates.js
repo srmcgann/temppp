@@ -6820,13 +6820,13 @@ const LoadFPSControls = async (renderer, options) => {
     renderer.keyTimerInterval = .2
     
     window.addEventListener('keydown', e => {
-      if(document.activeElement.nodeName == 'CANVAS'){
+      if(1||document.activeElement.nodeName == 'CANVAS'){
         renderer.keys[e.keyCode] = true
         renderer.lastInteraction = renderer.t
       }
     })
     window.addEventListener('keyup', e => {
-      if(document.activeElement.nodeName == 'CANVAS'){
+      if(1||document.activeElement.nodeName == 'CANVAS'){
         renderer.keys[e.keyCode] = false
         renderer.lastInteraction = renderer.t
       }
@@ -6896,7 +6896,7 @@ const LoadFPSControls = async (renderer, options) => {
       }
       
       accel = 1
-      if(document.activeElement.nodeName == 'CANVAS' &&
+      if(1 || document.activeElement.nodeName == 'CANVAS' &&
         (renderer.hasTraction || renderer.flyMode)) renderer.keys.map((v, i) => {
         if(renderer.keys[i]){
           switch(i){

@@ -6838,7 +6838,7 @@ const LoadFPSControls = async (renderer, options) => {
         //jump()
         //renderer.c.requestFullscreen()
         var el = document.querySelectorAll('.genericPopup')
-        if(!el.length && document.activeElement.nodeName == 'CANVAS') renderer.c.requestPointerLock({unadjustedMovement: true})
+        if(!el.length && document.activeElement.nodeName == 'CANVAS') document.body.requestPointerLock({unadjustedMovement: true})
       }
     })
     window.addEventListener('mouseup', e => {

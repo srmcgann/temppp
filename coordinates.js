@@ -6847,7 +6847,7 @@ const LoadFPSControls = async (renderer, options) => {
     })
     window.addEventListener('mousemove', e => {
       renderer.lastInteraction = renderer.t
-      if((1||document.pointerLockElement == renderer.c) || !renderer.focusRequiredForMouse){
+      if(document.pointerLockElement != null || !renderer.focusRequiredForMouse){
         var rect = renderer.c.getBoundingClientRect()
         mx = (e.pageX - rect.left) / renderer.c.clientWidth * renderer.c.width
         my = (e.pageY - rect.top) / renderer.c.clientHeight* renderer.c.height

@@ -4999,6 +4999,7 @@ const ShapeFromArray = async (shape, pointArray, options={}) => {
     })
     delete options.shapeData
   }
+  var tURL = options.url
   var tcan, tshptyp = shape.shapeType, ret, opts = { shapeData }
   if(shape.canvasTexture) tcan = shape.canvasTexture
   ;([
@@ -5028,7 +5029,7 @@ const ShapeFromArray = async (shape, pointArray, options={}) => {
   if(shape.canvasTexture) opts.canvasTexture = shape.canvasTexture
   opts.shapeType ='custom shape'
   opts.geometryData = geometryData
-  console.log(opts)
+  opts.url = ''
   await LoadGeometry(shape.renderer, opts).then(async geometry => {
     for(var i = 0; i < geometry.vertices.length; i+= stride){
       for(var j = 0; j < stride; j+=3){
@@ -5044,6 +5045,7 @@ const ShapeFromArray = async (shape, pointArray, options={}) => {
     geometry.nvstate = structuredClone(geometry.normalVecs)
     
     geometry.shapeType    = tshptyp
+    geometry.url          = tURL
     geometry.stride       = stride
     geometry.isShapeArray = true
     ret = geometry

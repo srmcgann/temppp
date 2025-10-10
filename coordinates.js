@@ -4960,7 +4960,6 @@ const ProcessShapeArray = shape => {
 
 
 const ShapeFromArray = async (shape, pointArray, options={}) => {
-  console.log('shape.vertices', shape.vertices)
   var geometryData = { vertices: [], normals: [], normalVecs: [], uvs: [] }
   var stride    = shape.vertices.length
   var v         = shape.vertices
@@ -5029,7 +5028,6 @@ const ShapeFromArray = async (shape, pointArray, options={}) => {
   if(shape.canvasTexture) opts.canvasTexture = shape.canvasTexture
   opts.shapeType ='custom shape'
   opts.geometryData = geometryData
-  console.log('geometryData', geometryData)
   opts.url = ''
   await LoadGeometry(shape.renderer, opts).then(async geometry => {
     for(var i = 0; i < geometry.vertices.length; i+= stride){

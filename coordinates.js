@@ -4961,7 +4961,7 @@ const ProcessShapeArray = shape => {
 
 
 const ShapeFromArray = async (shape, pointArray, options={}) => {
-  
+  console.log('shape.vertices', shape.vertices)
   var geometryData = { vertices: [], normals: [], normalVecs: [], uvs: [] }
   var stride    = shape.vertices.length
   var v         = shape.vertices

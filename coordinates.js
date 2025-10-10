@@ -1765,7 +1765,6 @@ const LoadGeometry = async (renderer, geoOptions) => {
           resolvedFromCache = true
         }
         if(!resolved){
-          console.log(geometryData)
           if(typeof geometryData.vertices != 'undefined' &&
              geometryData.vertices.length){
             if(typeof geometryData.normalAssocs != 'undefined') normalAssocs = geometryData.normalAssocs
@@ -5030,6 +5029,7 @@ const ShapeFromArray = async (shape, pointArray, options={}) => {
   if(shape.canvasTexture) opts.canvasTexture = shape.canvasTexture
   opts.shapeType ='custom shape'
   opts.geometryData = geometryData
+  console.log('geometryData', geometryData)
   opts.url = ''
   await LoadGeometry(shape.renderer, opts).then(async geometry => {
     for(var i = 0; i < geometry.vertices.length; i+= stride){

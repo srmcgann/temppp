@@ -5028,6 +5028,7 @@ const ShapeFromArray = async (shape, pointArray, options={}) => {
   if(shape.canvasTexture) opts.canvasTexture = shape.canvasTexture
   opts.shapeType ='custom shape'
   opts.geometryData = geometryData
+  console.log(opts)
   await LoadGeometry(shape.renderer, opts).then(async geometry => {
     for(var i = 0; i < geometry.vertices.length; i+= stride){
       for(var j = 0; j < stride; j+=3){

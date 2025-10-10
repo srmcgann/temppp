@@ -1765,6 +1765,7 @@ const LoadGeometry = async (renderer, geoOptions) => {
           resolvedFromCache = true
         }
         if(!resolved){
+          console.log(geometryData)
           if(typeof geometryData.vertices != 'undefined' &&
              geometryData.vertices.length){
             if(typeof geometryData.normalAssocs != 'undefined') normalAssocs = geometryData.normalAssocs

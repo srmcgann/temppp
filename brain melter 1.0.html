@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>brain melter 1.0</title>
+    <style>
+      body, html{
+        background: #000;
+        margin: 0;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      .mainCanvas{
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      c = document.createElement('canvas')
+      c.className = 'mainCanvas'
+      c.width = 1920
+      c.height = 1080
+      x = c.getContext('2d')
+      document.body.appendChild(c)
+
+      var rsz
+      window.addEventListener('resize', rsz = (e) => {
+        var margin = 25
+        var b = document.body
+        var n
+        var d = c.width !== 0 ? c.height / c.width : 1
+        c.style.margin = margin + 'px'
+        c.style.top = `calc(50% - ${margin}px)`
+        c.style.left = `calc(50% - ${margin}px)`
+        c.style.transform = 'translate(-50%, -50%)'
+        if(b.clientHeight/b.clientWidth > d){
+          c.style.width = `${(n=b.clientWidth) - margin*2}px`
+          c.style.height = `${n*d - margin*2}px`
+        }else{
+          c.style.height = `${(n=b.clientHeight) - margin*2}px`
+          c.style.width = `${n/d - margin*2}px`
+        }
+      })
+      rsz()
+
+      S = Math.sin
+      C = Math.cos
+      Rn = Math.random
+      t = 0, res = 320 / 2
+      var sd = 200
+      loop = () => {
+        if(1){
+          for(var o=4; o--;){
+            P=t?P:Array(w=res*(res/(16/9))|0).fill().map((v, i)=>0)
+            n=c.width=res
+            h = (c.width / (16/9)) | 0
+            if(!((t*60|0)%0)) {
+              for(l=2;l--;)for(var k = sd; k--;){
+                switch(l%2){
+                  case 0:
+                    rx = 0
+                    ry = .5
+                  break
+                  case 1:
+                    rx = .5
+                    ry = 0
+                  break
+                }
+                d = Math.min(100, Math.max(0, (.3-C(t*5)) * 100)) //Rn()**.5 * 10
+                X = (rx * n + S(p=Math.PI*2/sd * k+C(t)*10) * d) | 0
+                Y = (ry * h + C(p) * d) | 0
+                if(X < 0) X += res
+                if(X >= res) X -= res
+                if(Y < 0) Y += h
+                if(Y >= h) Y -= h
+                idx = X + Y * n
+                P[idx] += 1e4
+              }
+            }
+            c.height = h
+            P2=structuredClone(P)
+            P.map((v, i) => {
+              l = i%n?i-1:i+n-1
+              u = i/n|0?i-n:i+w-n
+              r = i%n<n-1?i+1:i-n+1
+              d = i<w-n?i+n:i%n
+              lu = l/n|0?l-n:l+w-n
+              ur = r/n|0?r-n:r+w-n
+              ld = l<w-n?l+n:l%n
+              dr = r<w-n?r+n:r%n
+              a = 0
+              m = [
+                1/6/2, 1/6, 1/6/2,
+                1/6,   1,  1/6,
+                1/6/2, 1/6, 1/6/2,
+              ]
+              ;([
+                P[lu]*m[0], P[u]*m[1], P[ur]*m[2], 
+                P[l]*m[3], P[i]*m[4], P[r]*m[5], 
+                P[ld]*m[6], P[d]*m[7], P[dr]*m[8], 
+              ]).map(v=>a+=v/2)
+              P2[i]=a
+            })
+            P = P2.map(v=>v/=1.05)
+          }
+          for(i=w;i--;){
+            x.fillRect(i%n,Y=i/n|0,1,1,x.fillStyle=`hsl(${P[i]**2/3e5+t*5e4},${Math.min(100, Math.max(0, (.3+C(t*8))*100))}%,${P[i]/50}%)`)
+          }
+        }
+        t+=1/60
+        requestAnimationFrame(loop)
+      }
+      loop()
+    </script>
+  </body>
+</html>

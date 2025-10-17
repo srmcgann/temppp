@@ -1,0 +1,64 @@
+144c144
+<       "val":1029
+---
+>       "val":0
+148c148
+<       "val":1029
+---
+>       "val":0
+152c152
+<       "val":1029
+---
+>       "val":0
+156c156
+<       "val":1029
+---
+>       "val":0
+160c160
+<       "val":1029
+---
+>       "val":0
+164c164
+<       "val":1029
+---
+>       "val":0
+168c168
+<       "val":1029
+---
+>       "val":0
+208c208
+<       "val":0
+---
+>       "val":1000000000
+399c399
+<       "val":"WebKit WebGL"
+---
+>       "val":"ANGLE (Intel, Intel(R) HD Graphics 400 Direct3D11 vs_5_0 ps_5_0), or similar"
+440c440
+<       "val":"WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)"
+---
+>       "val":"WebGL GLSL ES 3.00"
+464c464
+<       "val":4294967295
+---
+>       "val":2147483647
+468c468
+<       "val":4294967295
+---
+>       "val":2147483647
+504c504
+<       "val":4294967295
+---
+>       "val":2147483647
+508c508
+<       "val":4294967295
+---
+>       "val":2147483647
+570c570
+<       "val":"WebKit"
+---
+>       "val":"Mozilla"
+574c574
+<       "val":"WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+---
+>       "val":"WebGL 2.0"
